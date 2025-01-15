@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="Style.css">
+    <title> Juego el gato </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Juego de gato</h1>
+    <div>
+        <label>Modo de juego:</label>
+        <select id="gameMode">
+            <option value="2">Dos jugadores</option>
+            <option value="1">Un jugador</option>
+        </select>
+    </div>
+    <div>
+        <label for="Jugador1">Nombre del juador 1 (x):</label>
+        <input type="text" id="Jugador1">
+        <label for="Jugador2">Nombre del juador 2 (o):</label>
+        <input type="text" id="Jugador2">
+        <button onclick="InicioJuego()">Iniciar Juego</button>
+    </div>
+    <div class="tablero hidden" id="tablero">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div class="hidden" id="message"></div>
+    <script src="gato.js"></script>
+</body>
+</html>
